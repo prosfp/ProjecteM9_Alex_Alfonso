@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/style.css" rel="stylesheet" />
-    <title>Responsive Div Example</title>
-  </head>
-  <body class="flex-col">
-    <!-- Responsive Div Block -->
-    <div class="bg-blue-500 p-4 text-white mb-5">
-      <!-- Base Styles (applies to all breakpoints) -->
-      <p class="mb-2">Base Styles (applies to all breakpoints)</p>
 
-      <!-- Small Screen (sm) Styles -->
-      <p class="sm:bg-green-500 sm:p-2 sm:text-yellow-900 mb-2">
-        Small Screen (sm) Styles
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Log In</title>
+</head>
 
-      <!-- Medium Screen (md) Styles -->
-      <p class="md:bg-red-500 md:p-4 md:text-white mb-2">
-        Medium Screen (md) Styles
-      </p>
-
-      <!-- Large Screen (lg) Styles -->
-      <p class="lg:bg-purple-500 lg:p-6 lg:text-yellow-300 mb-2">
-        Large Screen (lg) Styles
-      </p>
-
-      <!-- Extra Large Screen (xl) Styles -->
-      <p class="xl:bg-indigo-500 xl:p-8 xl:text-white">
-        Extra Large Screen (xl) Styles
-      </p>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <!-- Centered Image -->
+    <div class="flex justify-center mb-6">
+      <img src="./img/user_icon.png" alt="User Icon" class="w-44" />
     </div>
-    <div>
-      <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded sm:bg-green-500 sm:hover:bg-green-700 md:bg-red-500 md:hover:bg-red-700 lg:bg-purple-500 lg:hover:bg-purple-700 xl:bg-indigo-500 xl:hover:bg-indigo-700"
-      >
-        Responsive Button
-      </button>
-    </div>
-  </body>
+
+    <form class="space-y-6">
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-lg font-medium mb-1">Email</label>
+        <input id="email" type="email" placeholder="Email" required
+          class="w-full bg-blue-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-lg font-medium mb-1">Contrasenya</label>
+        <input id="password" type="password" placeholder="Password" required
+          class="w-full bg-blue-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Remember Me Checkbox -->
+      <div class="flex items-center">
+        <input id="remember" type="checkbox" class="mr-2" />
+        <label for="remember" class="text-base">Recordarme</label>
+      </div>
+
+      <!-- Centered Buttons -->
+      <div class="flex justify-between space-x-4">
+        <a href="../html/register.html" class="h-9 w-full bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 flex items-center justify-center">
+          Registrarse
+        </a>
+        <a href="../html/paginaRedireccions.html" class="h-9 w-full bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 flex items-center justify-center">
+          Iniciar Sesió
+        </a>
+      </div>
+
+      <!-- Social Media Buttons -->
+      <div class="flex flex-col items-center space-y-3 mt-6">
+        <a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwiMguy70qKJAxVR0AIHHZ_xASQQPAgI&safe=active&ssui=on" class="h-9 w-full bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 flex items-center justify-center">
+          Iniciar con Google
+        </a>
+        <a href="https://github.com/login" class="h-9 w-full bg-gray-800 text-white font-semibold rounded-full hover:bg-gray-900 flex items-center justify-center">
+          Iniciar con GitHub
+        </a>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
