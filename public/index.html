@@ -8,17 +8,17 @@
     <title>Log In</title>
   </head>
 
-  <body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+  <body class="bg-gray-50 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
       <!-- Centered Image -->
-      <div class="flex justify-center mb-6">
-        <img src="/src/assets/user_icon.png" alt="User Icon" class="w-44" />
+      <div class="flex justify-center mb-4">
+        <img src="/src/assets/user_icon.png" alt="User Icon" class="w-24" />
       </div>
 
-      <form class="space-y-6">
+      <form class="space-y-4">
         <!-- Email -->
         <div>
-          <label for="email" class="block text-lg font-medium mb-1"
+          <label for="email" class="block text-sm font-medium mb-1"
             >Email</label
           >
           <input
@@ -26,59 +26,59 @@
             type="email"
             placeholder="Email"
             required
-            class="w-full bg-blue-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
         <!-- Password -->
         <div>
-          <label for="password" class="block text-lg font-medium mb-1"
-            >Contrasenya</label
+          <label for="password" class="block text-sm font-medium mb-1"
+            >Password</label
           >
           <input
             id="password"
             type="password"
             placeholder="Password"
             required
-            class="w-full bg-blue-100 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
 
         <!-- Remember Me Checkbox -->
         <div class="flex items-center">
           <input id="remember" type="checkbox" class="mr-2" />
-          <label for="remember" class="text-base">Recordarme</label>
+          <label for="remember" class="text-sm">Remember me</label>
         </div>
 
         <!-- Centered Buttons -->
-        <div class="flex justify-between space-x-4">
+        <div class="flex justify-between space-x-2">
           <a
             href="/src/pages/register.html"
-            class="h-9 w-full bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 flex items-center justify-center"
+            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
           >
-            Registrarse
+            Register
           </a>
           <a
             href="/src/pages/infoApp.html"
-            class="h-9 w-full bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 flex items-center justify-center"
+            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
           >
-            Iniciar Sesió
+            Log In
           </a>
         </div>
 
         <!-- Social Media Buttons -->
-        <div class="flex flex-col items-center space-y-3 mt-6">
+        <div class="flex flex-col items-center space-y-2 mt-4">
           <a
             href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwiMguy70qKJAxVR0AIHHZ_xASQQPAgI&safe=active&ssui=on"
-            class="h-9 w-full bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 flex items-center justify-center"
+            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 flex items-center justify-center"
           >
-            Iniciar con Google
+            Log in with Google
           </a>
           <a
             href="https://github.com/login"
-            class="h-9 w-full bg-tertiary text-white font-semibold rounded-full hover:bg-gray-900 flex items-center justify-center"
+            class="h-8 w-full bg-gray-800 text-white text-sm font-medium rounded-full hover:bg-gray-900 flex items-center justify-center"
           >
-            Iniciar con GitHub
+            Log in with GitHub
           </a>
         </div>
       </form>
